@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    overflow: hidden;
+}
+
+.header{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+.container .single-row{
+    display: flex;
+    white-space: nowrap;
+    margin: 50px;
+    animation: marquee 30s linear infinite;
+    animation-play-state: running;
+    animation-delay: 1s;
+}
+.single-review{
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+}
+
+.reviewer-image img{
+    width: 50px;
+    margin-right: 10px;
+}
+.details svg{
+    width: 15px;
+    color: coral;
+    fill: coral;
+}
+
+@keyframes marquee{
+    0%{
+        transform: translate3d(0%, 0, 0);
+    }
+    100%{
+        transform: translate3d(-50%, 0, 0);
+    }
+}
